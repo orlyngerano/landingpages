@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>How to make more money on youtube</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/how-to-make-money-on-youtube.css"/>
+
+    </style>
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popupForm">
+            <img class="closeModal" src="images/closemodal.png" onclick="sendMeClick()"/>
+            <span>Enter your info below to get free instant access..</span>
+            <div id="nameInput">
+                <input placeholder="My Firstname Is..." onfocus="inputFocus('nameInput', true)" onfocusout="inputFocus('nameInput', false)"/>
+                <img class="inputIcon" src="images/name.png"/>
+            </div>
+            <div id="emailInput">
+                <input placeholder="My Email Is..."  onfocus="inputFocus('emailInput', true)" onfocusout="inputFocus('emailInput', false)"//>
+                <img type="email" class="inputIcon" src="images/email.png"/>
+            </div>
+            <div onclick="givMeClick()">
+                GIVE ME THE FIRST FREE VIDEO
+            </div>
+            <div>
+                <i class="fas fa-lock"></i>
+                We'll keep your information private.
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>JUMPCUT</h3>
+        <div class="section thumbContainer">
+            <div class="header">
+                <h5>FREE STEP-BY-STEP VIDEO SERIES REVEALS:</h5>
+                <div>
+                    <h1>HOW TO MAKE
+                        <BR/> MORE MONEY ON
+                        <BR/>YOUTUBE
+                    </h1>
+                    <span>
+                        <BR/> THAN MOST PEOPLE MAKE FROM
+                        <br/> THEIR 9 TO 5 JOB
+                    </span>
+                </div>
+            </div>
+            <div class="header">
+                <img src="images/thumbnail_redo.jpg" onclick="sendMeClick()"/>
+            </div>
+
+        </div>
+        <div class="section">
+            <div>
+                RESULT SOME OF OUR STUDENTS HAVE GOTTEN
+            </div>
+            <div class="thumbContainer">
+                <div class="thumb">
+                    <img src="images/Frugal---HS.png" />
+                    <div>YouTube channel:</div>
+                    <div>FRUGAL AESTHETIC</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>Date:</span>
+                                <span>May 2016</span>
+                            </li>
+                            <li>
+                                <span>Views gained:</span>
+                                <span> +11.78 million</span>
+                            </li>
+                            <li>
+                                <span>Subscribers gained:</span>
+                                <span>+254,000</span>
+                            </li>
+                            <li>
+                                <span>Job today:</span>
+                                <span>Full time on YouTube</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/Gumbino---3.png" />
+                    <div>YouTube channel:</div>
+                    <div>GUMBINO</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>Date:</span>
+                                <span>June 2016</span>
+                            </li>
+                            <li>
+                                <span>Views gained:</span>
+                                <span> +54.04 million</span>
+                            </li>
+                            <li>
+                                <span>Subscribers gained:</span>
+                                <span>+354,000</span>
+                            </li>
+                            <li>
+                                <span>Job today:</span>
+                                <span>Full time on YouTube</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/xojahtna.jpg" />
+                    <div>YouTube channel:</div>
+                    <div>XOJAHTNA</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>Date:</span>
+                                <span>August 2016</span>
+                            </li>
+                            <li>
+                                <span>Views gained:</span>
+                                <span> +40.28 million</span>
+                            </li>
+                            <li>
+                                <span>Subscribers gained:</span>
+                                <span>+398,000</span>
+                            </li>
+                            <li>
+                                <span>Job today:</span>
+                                <span>Full time on YouTube</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sendme" onclick="sendMeClick()">
+                <div class="sendBtn">
+                    <i class="fab fa-youtube"></i>
+                    <span>Send me the FREE videos</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div>Video series free for next few days</div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>JUMPCUT</h3>
+            <div>
+                1905 North Wilcox Ave. #708 Hollywood. CA 90068
+                <br/> Discalimer: There is no guarantee of specific financial results and results can vary.
+            </div>
+            <div>
+                Jumpcut Inc. | All Rights Reserved |
+                <a href="https://jumpcut.com/privacy">Privacy Policy</a> |
+                <a href="https://jumpcut.com/terms">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var popup = document.getElementById('popup');
+        var popupForm = document.getElementsByClassName('popupForm')[0];
+
+        function givMeClick(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                //tbc                
+            };
+            xhttp.open("POST", "jumpcutform.html", true);
+            xhttp.send()
+        }
+
+
+        function sendMeClick() {
+            if (window.getComputedStyle(popup, null).getPropertyValue("display") == 'none') {
+                popup.style.display = 'flex';
+                setTimeout(function(){
+                    popupForm.style.opacity = 1;
+                }, 100);
+                
+            } else {
+                popupForm.style.opacity = 0;
+                setTimeout(function(){
+                    popup.style.display = 'none';
+                }, 300);                
+                
+            }
+        }
+
+        function inputFocus(el , isFocus){
+            var element = document.getElementById(el);
+            element.style.borderColor =  isFocus ? '#42B0E2': '#B4B4B4';
+        }
+
+    </script>
+</body>
+
+</html>
